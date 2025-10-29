@@ -17,18 +17,25 @@
         <!-- header section -->
         <header class="header_section">
             <img class="BFB_logo" src="./assets/BFB_Logo.png" alt="BFB_Logo">
-            <div class="menu_btn">
+            <div class="hamburger" id="hamburger">
+                <img class="hamburger_icon" src="./assets/hamburgerIcon.png" alt="">
+            </div>
+            <div class="cross" id="cross">
+                X
+            </div>
+            <div class="menu_btn" id="menu">
                 <ul class="menu_list">
                     <li>Home</li>
                     <li class="about_us">About Us <img class="arrow_img" src="./assets/arrow.png" alt="arrow">
                         <div class="dropdown_links manrope-font">
-                            <a href="#">The Story of BFB</a>
+                            <a href="#" class="Story">The Story of BFB</a>
                             <hr>
                             <a href="#">Our Mission & Vision</a>
                             <hr>
                             <a href="#">Our Board of Director</a>
                         </div>
                     </li>
+                    <li class="about_us_small_screen">About Us</li>
                     <li>Membership</li>
                     <li>Contact Us</li>
                     <li>Blog</li>
@@ -347,7 +354,7 @@
     </main>
 
     <!-- footer -->
-    <!-- <footer>
+    <footer>
         <div class="footer_container">
             <div class="logo_btn">
                 <img class="footer_bfb_logo" src="./assets/BFB_Logo.png" alt="BFB_Logo">
@@ -413,6 +420,17 @@
                 <h4>Designed with ❤ by Ontik Creative</h4>
             </div>
         </div>
-    </footer>     -->
+    </footer>  
+    
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const menu = document.getElementById('menu');
+        const crossIcon = document.getElementById("cross");
+
+        hamburger.addEventListener('click', () => {
+            menu.classList.toggle('active');
+        });
+    </script>
+
 </body>
 </html>

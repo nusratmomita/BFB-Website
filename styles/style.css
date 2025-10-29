@@ -38,6 +38,17 @@ body{
     align-items: center;
 }
 
+.cross{
+    display: none;
+}
+.about_us_small_screen{
+    display: none;
+}
+
+.hamburger {
+  display: none;
+ 
+}
 .BFB_logo{
     width: 90px;
 }
@@ -857,37 +868,40 @@ marquee{
     line-height: 28px;
 }
 
+
+/* ! Spacing problem problem - 7 */
 /* mobilepp_section */
 .mobileApp_parent {
     margin-top: 80px;
     background-color: #ffffff;
-    padding: 88px 80px;
+    padding: 88px 120px;
 }
 
 /* mobilepp_section */
 .mobilepp_section {
+    width: 1280px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 30px;
+    /* justify-content: center; */
+    gap: 64px;
     border-radius: 20px;
     background-image: url("./../assets/banner.png");
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 60px;
 }
 
 /* Phone mockup container — to crop the image */
 .mobileApp_wrapper {
     width: 385px;
     height: 100%;
-
 }
 
-
+/* ! unable to do this problem - 6*/
 .mobileApp_img {
     width: 385px;
     object-fit: contain;
+    margin-top: 76px;
+    margin-left: 83px;
 }
 
 /* Text and QR section */
@@ -895,7 +909,7 @@ marquee{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 500px;
+    /* max-width: 500px; */
 }
 
 .app_content h2 {
@@ -1093,11 +1107,70 @@ footer ul>li{
     background: linear-gradient(to right, #015533, #015533);
 }
 
-/* 
 @media (max-width: 768px) {
-  .banner_info{
-    margin-top: 56px;
-    display: flex;
-    flex-direction: column;
+    .header_section{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 14px 16px;
+    }
+
+    .BFB_logo{
+        width: 44px;
+        height: 44px;
+    }
+
+    .hamburger_icon{
+        width: 24px;
+        height: 19px;
+        cursor: pointer;
+    }
+
+
+    .hamburger {
+        display: block;
+        margin-top: -10px;
+    }
+
+    .menu_btn {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+        position: absolute;
+        top: 60px;
+        left: 20px;
+        right: 5px;
+        /* width: 10%; */
+        background-color: white;
+        padding: 20px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        z-index: 999;
+    }
+
+    .about_us_small_screen{
+        display: block;
+    }
+    .about_us{
+        display: none;
+    }
+
+    .menu_btn.active {
+        display: flex;
+    }
+
+    .cross.active{
+        display: flx;
+    }
+
+    .menu_list {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .auth_btn {
+        width: 100%;
+        margin-top: -20px;
+    }
 }
-} */
