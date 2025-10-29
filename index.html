@@ -17,17 +17,25 @@
             <div class="menu_btn">
                 <ul class="menu_list">
                     <li>Home</li>
-                    <li class="about_us">About Us <img class="arrow_img" src="./assets/arrow.png" alt="arrow"></li>
+                    <li class="about_us">About Us <img class="arrow_img" src="./assets/arrow.png" alt="arrow">
+                        <div class="dropdown_links manrope-font">
+                            <a href="#">The Story of BFB</a>
+                            <hr>
+                            <a href="#">Our Mission & Vision</a>
+                            <hr>
+                            <a href="#">Our Board of Director</a>
+                        </div>
+                    </li>
                     <li>Membership</li>
                     <li>Contact Us</li>
                     <li>Blog</li>
                     <li>Events</li>
                     <li>Media & Press</li>
                 </ul>
-                <button class="auth_btn">Login/Registration</button>
+                <button class="auth_btn manrope-font">Login/Registration</button>
             </div>
         </header>
-        <hr>
+        <hr class="navbar_hr">
         <!-- banner second section -->
         <div class="banner_section">
             <div>
@@ -36,10 +44,10 @@
             <div class="banner_info">
                 <div class="images_and_connect">
                     <div class="banner_images">
-                        <img class="bannerH1" src="./assets/bannerH1.png" alt="">
-                        <img class="bannerH2" src="./assets/bannerH2.png" alt="">
-                        <img class="bannerH3" src="./assets/bannerH1.png" alt="">
-                        <div class="banner_circle" class="green_circle">
+                        <img class="bannerH1" src="./assets/bannerH1.png" alt="bannerH1">
+                        <img class="bannerH2" src="./assets/bannerH2.png" alt="bannerH2">
+                        <img class="bannerH3" src="./assets/bannerH1.png" alt="bannerH1">
+                        <div class="banner_circle">
                             <img class="plus_icon" src="./assets/plus.png" alt="plus_icon">
                         </div>
                     </div>
@@ -49,11 +57,11 @@
                 <div class="description_text">
                     <div class="banner_text">The Billions For Bangladesh initiative is an ambitious diaspora-<br/> driven plan designed to raise and invest 1 billion USD for <br> Bangladesh’s economic development.</div>
                     <div class="banner_CTA">
-                        <button class="download_btn">
+                        <button class="download_btn manrope-font">
                             Download Now
                         </button>
-                        <button class="plan_btn">
-                            <img src="./assets/download.png" alt="download">
+                        <button class="plan_btn manrope-font">
+                            <img class="download_icon" src="./assets/download.png" alt="download">
                             Sectoral Investment Plan
                         </button>
                     </div>
@@ -61,65 +69,108 @@
             </div>
         </div>
         <!-- banner skill section -->
-        <!-- <div class="banner_skills_section">
-            <div class="banner_skills1">
-                <img src="./assets/banner1.png" alt="grow">
-                <div class="banner_skill_desc">
-                    <h3 class="banner_skill_title">Skill Development</h3>
-                    <p class="banner_skill_paragraph">Contribute to human potential. From digital literacy to vocational training, <br>your contribution will equip Bangladeshi individuals with the skills they need to grow and build a workforce ready for tomorrow.</p>
+        <div class="banner_skills_container">
+            <div class="banner_skills_section">
+                <div class="banner_skills1">
+                    <img class="banner_img_1" src="./assets/banner1.png" alt="grow">
+                    <div class="banner_skill_desc">
+                        <h3 class="banner_skill_title">Skill Development</h3>
+                        <p class="banner_skill_paragraph">Contribute to human potential. From digital literacy <br> to vocational training, your contribution will equip <br> Bangladeshi individuals with the skills they need to <br> grow and build a workforce ready for tomorrow.</p>
+                    </div>
+                </div>
+                <div class="banner_skills2">
+                    <img src="./assets/banner2.png" alt="help">
+                    <div class="banner_skill_desc">
+                        <h3 class="banner_skill_title">Skill Development</h3>
+                        <p class="banner_skill_paragraph">Contribute to human potential. From digital literacy <br> to vocational training, your contribution will equip <br> Bangladeshi individuals with the skills they need to <br> grow and build a workforce ready for tomorrow.</p>
+                    </div>
+                </div>
+                <div class="banner_skills3">
+                    <img src="./assets/banner3.png" alt="plant">
+                    <div class="banner_skill_desc">
+                        <h3 class="banner_skill_title">Skill Development</h3>
+                        <p class="banner_skill_paragraph">Contribute to human potential. From digital literacy <br> to vocational training, your contribution will equip <br> Bangladeshi individuals with the skills they need to <br> grow and build a workforce ready for tomorrow.</p>
+                    </div>
                 </div>
             </div>
-            <div class="banner_skills2">
-                <img src="./assets/banner2.png" alt="help">
-                <div class="banner_skill_desc">
-                    <h3 class="banner_skill_title">Skill Development</h3>
-                    <p class="banner_skill_paragraph">Contribute to human potential. From digital literacy to vocational training, <br>your contribution will equip Bangladeshi individuals with the skills they need to grow and build a workforce ready for tomorrow.</p>
-                </div>
-            </div>
-            <div class="banner_skills3">
-                <img src="./assets/banner3.png" alt="plant">
-                <div class="banner_skill_desc">
-                    <h3 class="banner_skill_title">Skill Development</h3>
-                    <p class="banner_skill_paragraph">Contribute to human potential. From digital literacy to vocational training, <br>your contribution will equip Bangladeshi individuals with the skills they need to grow and build a workforce ready for tomorrow.</p>
-                </div>
-            </div>
-        </div> -->
+        </div>
     </div>
 
     <main>
         <!-- empowering section -->
-        <!-- <div class="empowering_section">
+        <div class="empowering_section">
             <h1 class="empowering_title">Empowering Bangladesh</h1>
             <h5 class="empowering_desc">Innovating and Collaborating for a Bangladesh that Endures Prosperity</h5>
 
             <div class="empowering_growth">
-                <h1 class="inclusive_growth">Inclusive Growth</h1>
-                <div>
-                    <hr>
-                    <div class="empowering_first">
-                        <h4>01</h4>
-                        <div>
-                            <h2>One Billion Strong: Bringing Change through Grassroots Movement</h2>
-                            <p>We’re on a bold mission to raise $1 billion in contributions to transform Bangladesh’s key <br> development sectors. The first step was launching a digital platform that acts as a powerful <br> communication and engagement hub connecting changemakers, visionaries, and contributors <br> who believe in shaping a stronger future for Bangladesh.</p>
+                <!-- <h1 class="inclusive_growth">Inclusive Growth</h1> -->
+                <div class="empowering_growth_points">
+                    <div>
+                        <hr>
+                        <div class="empowering_first">
+                            <div class="empowering_first_text">
+                                <h4 class="empowering_first_01">01</h4>
+                                <div>
+                                    <h2 class="empowering_first_title">One Billion Strong: Bringing Change through Grassroots <br> Movement</h2>
+                                    <p class="empowering_first_desc">We’re on a bold mission to raise $1 billion in contributions to transform Bangladesh’s key <br> development sectors. The first step was launching a digital platform that acts as a powerful <br> communication and engagement hub connecting changemakers, visionaries, and contributors <br> who believe in shaping a stronger future for Bangladesh.</p>
+                                </div>
+                            </div>
+                            <img src="./assets/empowering1.png" alt="empowering_img">
                         </div>
-                        <img src="./assets/empowering1.png" alt="">
                     </div>
-                </div>
+                    <div>
+                        <hr>
+                        <div class="empowering_second">
+                            <div class="empowering_second_text">
+                                <h4 class="empowering_second_02">02</h4>
+                                <div>
+                                    <h2 class="empowering_second_title">One Million Voices: United to Collaborate on One Vision</h2>
+                                    <p class="empowering_second_desc">We will be transparent on how the funds are being invested and ensure proper accountability of <br> those investments. We will keep our digital dashboard updated for the diaspora to stay <br> informed.</p>
+                                </div>
+                            </div>
+                            <img src="./assets/empowring2.jpg" alt="empowering_img">
+                        </div>
+                    </div>
+                    <div>
+                        <hr>
+                        <div class="empowering_third">
+                            <div class="empowering_third_text">
+                                <h4 class="empowering_third_03">03</h4>
+                                <div>
+                                    <h2 class="empowering_third_title">From Insight to Impact: Co-Creating the Future of Bangladesh</h2>
+                                    <p class="empowering_third_desc">Seasoned professionals, thought leaders, and innovators will join forces with visionary minds to <br> co-create solutions that can drive real change. With a powerful blend of financial support and <br> expert knowledge, this united front will help design and deliver transformative solutions for <br> Bangladesh’s most pressing challenges.</p>
+                                </div>
+                            </div>
+                            <img src="./assets/empowring3.png" alt="empowering_img">
+                        </div>
+                        <hr>
+                    </div>
+                </div> 
             </div>
-        </div> -->
+        </div>
         
         <!-- BOD -->
         <div class="BOD">
-            <h1 class="BODs">Our Board of Directors</h1>
-            <p class="BOD_desc">Every great revolution starts with a visionary, a leader who is capable of making his/her peer see <br> the exact vision/ dream he is seeing. That's how a leader gets created.</p>
+            <div class="BOD_text">
+                <h1 class="BODs">Our Board of Directors</h1>
+                <p class="BOD_desc">Every great revolution starts with a visionary, a leader who is capable of making his/her peer see <br> the exact vision/ dream he is seeing. That's how a leader gets created.</p>
+            </div>
 
             <div class="anisRahman_section">
-                <img src="./assets/anisRahman.png" alt="anisRahman">
+                <img class="anisRahman_img" src="./assets/anisRahman.png" alt="anisRahman">
                 <div class="anisRahman_intro">
                     <h5 class="anisRahman_post">BFB Co-Founder, BOD & CEO</h5>
                     <h2 class="anisRahman">Anis Rahman</h2>
                     <p class="anisRahman_desc">Anis Rahman is a distinguished Bangladeshi-American professional whose remarkable career spans across the corporate and philanthropic sectors. With a solid educational foundation in Mechanical Engineering and an MBA from a prestigious university, Rahman has seamlessly transitioned from academia to leadership roles in some of the most prominent companies in the United States. His academic training equipped him with the technical expertise and business...</p>
                 </div>
+            </div>
+
+            <!-- slider -->
+            <div class="sliders">
+                <div class="slider_1"></div>
+                <div class="slider_2"></div>
+                <div class="slider_3"></div>
+                <div class="slider_4"></div>
             </div>
         </div> 
 
@@ -128,7 +179,6 @@
             <img class="bridge" src="./assets/bridge.jpg" alt="bridge">
             <div class="economic_impact_section">
                 <h1 class="economic_impact_desc">1 Million Diasporas Raising 1 Billion <br> for 1 Trillion Economic Impact - Let’s <br> Make it Real</h1>
-                <!-- navigation -->
                 <div class="navigation">
                     <ul>
                         <li>About Us</li>
@@ -142,22 +192,25 @@
                 <p class="economic_impact_paragraph_second">Billions For Bangladesh (BFB) is quickly taking shape as it embarks on this very ambitious but worthwhile journey. The Company will identify and enlist multiple Board of Directors including the 5 co-founders from the global diaspora.</p>
                 <button class="more_btn">Know More</button>
             </div>
-
         </div>
         <!-- impact factors -->
-        <!-- <div class="impact_factors">
-            <h1>Digital Infrastructure</h1>
+        <div class="impact_factors">
+            <h1 class="">Digital Infrastructure</h1>
+            <div class="circle"></div>
             <h1>Education</h1>
+            <div class="circle"></div>
             <h1>Healthcare</h1>
+            <div class="circle"></div>
             <h1>Renewable Energy</h1>
+            <div class="circle"></div>
             <h1>Financial Inclusion</h1>
-        </div> -->
+        </div>
 
         <!-- feedback section -->
-        <div class="fd_section">
-            <h1 class="fb_title">Feedback that Inspires Us</h1>
+        <!-- <div class="fd_section">
+            <h1 class="fd_title">Feedback that Inspires Us</h1>
             <div class="fd_desc">
-                <img src="./assets/quatationMark.png" alt="quatationMark">
+                <img src="./assets/quatationMark.png" alt="quotationMark">
                 <p class="fd_paragraph">The bond between us is incarnated by the 600,000-strong British-Bangladeshis who contribute so much to the United Kingdom every day. I think particularly of the fantastic doctors and nurses in our National Health Service, many of whom are helping to treat and vaccinate our people in our battle against Covid-19. Today, Bangladesh is one of the fastest growing economies in the world and we share the commitment to create an ever more prosperous and environmentally sustainable future.</p>
 
                 <div class="uk">
@@ -168,12 +221,11 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <!-- FAQ -->
-        <div>
+        <!-- <div>
             <h1 class="faq_title">Frequently Asked Questions</h1>
-            <!-- question -->
             <div class="questions">
                 <div class="question1">
                     <h4>1. What is BFB?</h4>
@@ -220,13 +272,127 @@
                     <img src="./assets/greenPlus.png" alt="green_plus">
                 </div>
             </div>
-        </div>
+        </div> -->
 
-        <!-- what's next -->
-         
+        <!--what's next -->
+        <!-- <div class="whats_next">
+            <h1 class="whats_next_title">What's Coming Next?</h1>
+            <div class="whats_next_desc">
+                <div class="track_info">
+                    <img class="tracker" src="./assets/trackor.jpg" alt="tracker">
+                    <button class="tracker_price">$2000</button>
+                </div>
+                <div class="whats_next_text">
+                    <h1 class="whats_next_headline">BFB Participates in BMANA <br> Conference in Orlando, FL.</h1>
+                    <p class="whats_next_paragraph">Let's meet at this historic event, where all the top <br> significant members of our agricultural industry will <br> present their insights and development plan under one <br> roof.</p>
+                    <div class="time_location">
+                        <div class="calendar">
+                            <img src="./assets/calendar.png" alt="calendar">
+                            <h4>Mar 24, 2026 to Mar 25, 2026</h4>
+                        </div>
+                        <div class="location">
+                            <img src="./assets/location.png" alt="location">
+                            <h4>Sheraton Hotel Dhaka</h4>
+                        </div>
+                        <div class="building">
+                            <img src="./assets/building.png" alt="building">
+                            <h4>Business Asia</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- mobile app -->
+        <!-- <div class="mobileApp_parent">
+            <div class="mobilepp_section">
+                <div class="mobileApp_wrapper">
+                    <img class="mobileApp_img" src="./assets/mobileApp.png" alt="mobileApp">
+                </div>
+
+                <div class="app_content">
+                    <h2>Download the BFB App Now</h2>
+                    <h5>Invest in Bangladesh. Build the Future. Transform Lives.</h5>
+
+                    <div class="qr_section">
+                        <img class="qrCode" src="./assets/qrcode.jpg" alt="qrcode">
+                        <div class="qr_text">
+                        <h4>Scan to download the app</h4>
+                        <img class="arrow_img" src="./assets/rotatedArrow.png" alt="rotatedArrow">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
     </main>
 
-
-    
+    <!-- footer -->
+    <!-- <footer>
+        <div class="footer_container">
+            <div class="logo_btn">
+                <img class="footer_bfb_logo" src="./assets/BFB_Logo.png" alt="BFB_Logo">
+                <h5 class="footer_caption">Cause. Contribution. Change</h5>
+                <div class="btns">
+                    <button class="google_btn">
+                        <img class="google_btn_img" src="./assets/google_play_store.png" alt="mage_playstore">
+                        <div class="google_btn_text">
+                            <h4>GET IT NOW</h4>
+                            <h3>Google Play</h4>
+                        </div>
+                    </button>
+                    <button class="appStore_btn">
+                        <img class="app_btn_img" src="./assets/Vector.png" alt="Vector">
+                        <div>
+                            <h4>Download it On</h4>
+                            <h3>App Store</h4>
+                        </div>
+                    </button>
+                </div>
+            </div>
+            <div class="footer_links">
+                <div>
+                    <h5>Pages</h5>
+                    <hr class="hr_footer">
+                    <ul class="pages">
+                        <li>About Us</li>
+                        <li>Contact Us</li>
+                        <li>Blog</li>
+                        <li>Events</li>
+                        <li>Media & Press</li>
+                    </ul>
+                </div>
+                <div>
+                    <h5>Account</h5>
+                    <hr class="hr_footer">
+                    <ul class="account">
+                        <li>Privacy Policy</li>
+                        <li>Terms & Conditions</li>
+                        <li>FAQ</li>
+                        <li>Events</li>
+                        <li>Media & Press</li>
+                    </ul>
+                </div>
+                <div class="SM_links">
+                    <h5>Social Media</h5>
+                    <hr class="hr_footer">
+                    <ul class="SM">
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Threads</li>
+                        <li>LinkedIn</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <div class="footer_bottom_text">
+                <h4>Copyright 2025 all rights reserved by BFB</h4>
+                <hr class="footer_bottom_hr">
+                <h4>Designed with ❤ by Ontik Creative</h4>
+            </div>
+        </div>
+    </footer>     -->
 </body>
 </html>
