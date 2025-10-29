@@ -15,6 +15,13 @@ body{
   font-style: normal;
 }
 
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:400;
+  font-style: normal;
+}
+
 .header_banner{
     background-image: url("./../assets/banner.png");
     background-repeat: no-repeat;
@@ -606,6 +613,9 @@ ul {
     margin-left: -10px;
 }
 
+marquee{
+    background-color: #FFFFFF;
+}
 .impact_factors{
     background-color: #FFFFFF;
     display: flex;
@@ -619,8 +629,32 @@ ul {
     height: 9px;
     background:  #017848;
     border-radius: 100%;
-    
+    margin-top: 20.5px;
+    margin-bottom: 20.5px;
 }
+
+.DI, .HC, .FI{
+    font-weight: 500;
+    font-size: 41px;
+    line-height: 100%;
+    color: transparent; /* No fill color */
+    -webkit-text-stroke: 1px #017848; /* Outline thickness and color */
+    white-space: nowrap;
+    margin-top: 20.5px;
+    margin-bottom: 20.5px;
+}
+
+.edu, .RE{
+    font-weight: 500;
+    font-size: 41px;
+    line-height: 100%;
+    color: #017848;
+    white-space: nowrap;
+    margin-top: 20.5px;
+    margin-bottom: 20.5px;
+}
+
+
 /* feedback section */
 .fd_section{
     margin-top: 88px;
