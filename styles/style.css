@@ -56,7 +56,6 @@ a{
   background-size: cover;
 }
 
-
 .cross{
   display: none;
 }
@@ -73,7 +72,6 @@ a{
 .swiper-pagination {
   display: flex;
   justify-content: center;
-  /* margin-top: 20px; */
 }
 
 .swiper-pagination-bullet {
@@ -85,14 +83,13 @@ a{
     #016D42 40%, /* filled portion */
     #01784890 50% /* unfilled portion */
   );
-  /* margin: 0 16px; Space between dots */
 }
 
 
 
 /* economic_impact */
 .economic_impact{
-    margin-top: 250px;
+    /* margin-top: 250px; */
     background-color: #FFFFFF;
     padding: 40px 0px;
     display: flex;
