@@ -20,6 +20,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
     <link rel="stylesheet" href="./styles/style.css">
 
     <title>BFB Website</title>
@@ -77,9 +84,9 @@
             </nav>
         </header>
         <!---->
-        <!-- <hr class="navbar_hr"> -->
+        <hr class="navbar_hr">
         <!-- banner second section -->
-        <div class="banner_section mt-[88px] ml-[80px]">
+        <div class="mt-[88px] ml-[80px]">
             <div class="mb-[56px] ">
                 <h1 class="font-[700] text-[80px] leading-[96px] container">Till Now - It was a Dream,<br><span class="text-[#016D42]">Now it’s a Reality</span></h1>
             </div>
@@ -111,7 +118,7 @@
             </div>
         </div>
         <!-- banner skill section -->
-        <div class="max-w-[1345px] h-[730px] mx-auto flex gap-5 justify-center items-center mt-[88px] bg-[#FFFFFF] rounded-[16px]">
+        <div class="border-2 border-red-900 max-w-[1345px] h-[730px] mx-auto flex gap-5 justify-center items-center mt-[88px] bg-[#FFFFFF] rounded-[16px]">
                 <div class="mt-[56px] w-[400px] h-[616px]">
                     <img class="w-[400px] h-[410px]" src="./assets/banner1.png" alt="grow">
                     <div class="mt-[32px]">
@@ -136,82 +143,134 @@
         </div>
     </div>
     <main class="">
-        <!-- empowering section -->
-        <div class="mt-[88px] empowering_sectionn container side_padding">
-            <h1 class="empowering_title">Empowering Bangladesh</h1>
-            <h5 class="empowering_desc">Innovating and Collaborating for a Bangladesh that Endures Prosperity</h5>
-
-            <div class="empowering_growth">
-                <!-- <h1 class="inclusive_growth">Inclusive Growth</h1> -->
-                <div class="empowering_growth_points">
-                    <div>
-                        <hr>
-                        <div class="empowering_first">
-                            <div class="empowering_first_text">
-                                <h4 class="empowering_first_01">01</h4>
-                                <div>
-                                    <h2 class="empowering_first_title">One Billion Strong: Bringing Change through Grassroots <br> Movement</h2>
-                                    <p class="empowering_first_desc">We’re on a bold mission to raise $1 billion in contributions to transform Bangladesh’s key <br> development sectors. The first step was launching a digital platform that acts as a powerful <br> communication and engagement hub connecting changemakers, visionaries, and contributors <br> who believe in shaping a stronger future for Bangladesh.</p>
+        <!-- empowering section-->
+        <div class="container">
+            <div class="mt-[88px] mb-[88px] mr-[90px] ml-[90px] ">
+                <h1 class="font-[700] text-[48px] leading-[64px] border-2 border-red-900 ">Empowering Bangladesh</h1>
+                <h5 class="font-[600] text-[24px] leading-[34px] text-[#1D1F1D] mt-[12px]">Innovating and Collaborating for a Bangladesh that Endures Prosperity</h5>
+    
+                <div class="mt-[56px] flexx">
+                    <!-- <div class="w-1/5 flex justify-center items-center">
+                        <h1 class="w-1/5 font-[700] text-[#FFD566] text-[78px] rotate-270 opacity-20 whitespace-nowrap">Inclusive Growth</h1>
+                    </div> -->
+                    <div class="ww-4/5 flex gap-[64px] flex-col justify-center items-center borderr-2 border-red-900 ">
+                        <div>
+                            <hr>
+                            <div class="flex gap-[125px] justify-center items-center mt-[32px] mb-[32px] border-2 border-red-900 ">
+                                <div class="flex justify-center items-start gap-[24px]">
+                                    <h4 class="font-[500] text-[20px] leading-[30px]">01</h4>
+                                    <div class="">
+                                        <h2 class="font-[700] text-[24px] leading-[34px] text-[#111211]">One Billion Strong: Bringing Change through Grassroots <br> Movement</h2>
+                                        <p class="font-[600] text-[16px] leading-[26px] text-[#252725]">We’re on a bold mission to raise $1 billion in contributions to transform Bangladesh’s key <br> development sectors. The first step was launching a digital platform that acts as a powerful <br> communication and engagement hub connecting changemakers, visionaries, and contributors <br> who believe in shaping a stronger future for Bangladesh.</p>
+                                    </div>
                                 </div>
+                                <img class="w-[240px] h-[156px] rounded-[8px]" src="./assets/empowering1.png" alt="empowering_img">
                             </div>
-                            <img src="./assets/empowering1.png" alt="empowering_img">
                         </div>
-                    </div>
-                    <div>
-                        <hr>
-                        <div class="empowering_second">
-                            <div class="empowering_second_text">
-                                <h4 class="empowering_second_02">02</h4>
-                                <div>
-                                    <h2 class="empowering_second_title">One Million Voices: United to Collaborate on One Vision</h2>
-                                    <p class="empowering_second_desc">We will be transparent on how the funds are being invested and ensure proper accountability of <br> those investments. We will keep our digital dashboard updated for the diaspora to stay <br> informed.</p>
+                        <div>
+                            <hr>
+                            <div class="flex gap-[125px] justify-center items-center mt-[32px] mb-[32px] border-2 border-red-900 ">
+                                <div class="flex justify-center items-start gap-[24px]">
+                                    <h4 class="font-[500] text-[20px] leading-[30px]">02</h4>
+                                    <div>
+                                        <h2 class="font-[700] text-[24px] leading-[34px] text-[#111211]">One Million Voices: United to Collaborate on One Vision</h2>
+                                        <p class="font-[600] text-[16px] leading-[26px] text-[#252725]">We will be transparent on how the funds are being invested and ensure proper accountability of <br> those investments. We will keep our digital dashboard updated for the diaspora to stay <br> informed.</p>
+                                    </div>
                                 </div>
+                                <img class="w-[240px] h-[156px] rounded-[8px]" src="./assets/empowring2.jpg" alt="empowering_img">
                             </div>
-                            <img src="./assets/empowring2.jpg" alt="empowering_img">
                         </div>
-                    </div>
-                    <div>
-                        <hr>
-                        <div class="empowering_third">
-                            <div class="empowering_third_text">
-                                <h4 class="empowering_third_03">03</h4>
-                                <div>
-                                    <h2 class="empowering_third_title">From Insight to Impact: Co-Creating the Future of Bangladesh</h2>
-                                    <p class="empowering_third_desc">Seasoned professionals, thought leaders, and innovators will join forces with visionary minds to <br> co-create solutions that can drive real change. With a powerful blend of financial support and <br> expert knowledge, this united front will help design and deliver transformative solutions for <br> Bangladesh’s most pressing challenges.</p>
+                        <div>
+                            <hr>
+                            <div class="flex gap-[125px] justify-center items-center mt-[32px] mb-[32px]">
+                                <div class="flex justify-center items-start gap-[24px]">
+                                    <h4 class="font-[500] text-[20px] leading-[30px]">03</h4>
+                                    <div>
+                                        <h2 class="font-[700] text-[24px] leading-[34px] text-[#111211]">From Insight to Impact: Co-Creating the Future of Bangladesh</h2>
+                                        <p class="font-[600] text-[16px] leading-[26px] text-[#252725]">Seasoned professionals, thought leaders, and innovators will join forces with visionary minds to <br> co-create solutions that can drive real change. With a powerful blend of financial support and <br> expert knowledge, this united front will help design and deliver transformative solutions for <br> Bangladesh’s most pressing challenges.</p>
+                                    </div>
                                 </div>
+                                <img class="w-[240px] h-[156px] rounded-[8px]" src="./assets/empowring3.png" alt="empowering_img">
                             </div>
-                            <img src="./assets/empowring3.png" alt="empowering_img">
+                            <hr>
                         </div>
-                        <hr>
-                    </div>
-                </div> 
+                    </div> 
+                </div>
             </div>
         </div>
         
-        <!-- BOD -->
-        <div class="BOD display_hide">
-            <div class="BOD_text">
-                <h1 class="BODs">Our Board of Directors</h1>
-                <p class="BOD_desc">Every great revolution starts with a visionary, a leader who is capable of making his/her peer see <br> the exact vision/ dream he is seeing. That's how a leader gets created.</p>
-            </div>
-
-            <div class="anisRahman_section">
-                <img class="anisRahman_img" src="./assets/anisRahman.png" alt="anisRahman">
-                <div class="anisRahman_intro">
-                    <h5 class="anisRahman_post">BFB Co-Founder, BOD & CEO</h5>
-                    <h2 class="anisRahman">Anis Rahman</h2>
-                    <p class="anisRahman_desc">Anis Rahman is a distinguished Bangladeshi-American professional whose remarkable career spans across the corporate and philanthropic sectors. With a solid educational foundation in Mechanical Engineering and an MBA from a prestigious university, Rahman has seamlessly transitioned from academia to leadership roles in some of the most prominent companies in the United States. His academic training equipped him with the technical expertise and business...</p>
+        <!-- BOD 
+         
+        -->
+        <div class="container side_padding">
+            <div class="ml-[201px] mr-[201px] mt-[175px]">
+                <div class="text-center">
+                <h1 class="font-[700] text-[48px] leading-[64px] text-[#111211] mb-[12px]">
+                    Our Board of Directors
+                </h1>
+                <p class="font-[500] text-[18px] leading-[28px] text-[#292B29] mb-[48px]">
+                    Every great revolution starts with a visionary, a leader who is capable of making his/her peer see <br> the exact vision/ dream he is seeing.
+                </p>
                 </div>
-            </div>
 
-            <!-- slider -->
-            <div class="sliders">
-                <div class="slider_1"></div>
-                <div class="slider_2"></div>
-                <div class="slider_3"></div>
-                <div class="slider_4"></div>
+                <!-- Swiper slider container -->
+                <div class="swiper my-director-slider  w-[1030px] h-[445px] bg-[#FFFFFF] border-2 border-[#707170] rounded-2xl"> 
+                    <div class="swiper-wrapper">
+                        <!-- Slide 1 -->
+                        <div class="swiper-slide borderr-2 border-red-900 flex gap-8 flex-col md:flex-row justify-start items-center p-12">
+                            <img class="w-[300px] h-[350px]" src="./assets/anisRahman.png" alt="Anis Rahman">
+                            <div class="borderr-2 border-red-900">
+                                <h5 class="font-[600] text-[16px] text-[#017848] leading-[26px]">BFB Co-Founder, BOD & CEO</h5>
+                                <h2 class="font-[700] text-[24px] leading-[34px] text-[#111211] mb-[24px]">Anis Rahman</h2>
+                                <p class="font-[500] text-[18px] leading-[28px] text-[#111211]">
+                                Anis Rahman is a distinguished Bangladeshi-American professional whose remarkable career spans across the corporate and philanthropic sectors. With a solid educational foundation in Mechanical Engineering and an MBA from a prestigious university, Rahman has seamlessly transitioned from academia to leadership roles in some of the most prominent companies in the United States. His academic training equipped him with the technical expertise and business...
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Slide 2 -->
+                        <div class="swiper-slide borderr-2 border-red-900 flex gap-8 flex-col md:flex-row justify-start items-center p-12">
+                            <img class="w-[300px] h-[350px]" src="./assets/anisRahman.png" alt="Anis Rahman">
+                            <div class="borderr-2 border-red-900">
+                                <h5 class="font-[600] text-[16px] text-[#017848] leading-[26px]">BFB Co-Founder, BOD & CEO</h5>
+                                <h2 class="font-[700] text-[24px] leading-[34px] text-[#111211] mb-[24px]">Anis Rahman</h2>
+                                <p class="font-[500] text-[18px] leading-[28px] text-[#111211]">
+                                Anis Rahman is a distinguished Bangladeshi-American professional whose remarkable career spans across the corporate and philanthropic sectors. With a solid educational foundation in Mechanical Engineering and an MBA from a prestigious university, Rahman has seamlessly transitioned from academia to leadership roles in some of the most prominent companies in the United States. His academic training equipped him with the technical expertise and business...
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Slide 3 -->
+                        <div class="swiper-slide borderr-2 border-red-900 flex gap-8 flex-col md:flex-row justify-start items-center p-12">
+                            <img class="w-[300px] h-[350px]" src="./assets/anisRahman.png" alt="Anis Rahman">
+                            <div class="borderr-2 border-red-900">
+                                <h5 class="font-[600] text-[16px] text-[#017848] leading-[26px]">BFB Co-Founder, BOD & CEO</h5>
+                                <h2 class="font-[700] text-[24px] leading-[34px] text-[#111211] mb-[24px]">Anis Rahman</h2>
+                                <p class="font-[500] text-[18px] leading-[28px] text-[#111211]">
+                                Anis Rahman is a distinguished Bangladeshi-American professional whose remarkable career spans across the corporate and philanthropic sectors. With a solid educational foundation in Mechanical Engineering and an MBA from a prestigious university, Rahman has seamlessly transitioned from academia to leadership roles in some of the most prominent companies in the United States. His academic training equipped him with the technical expertise and business...
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Slide 4 -->
+                        <div class="swiper-slide borderr-2 border-red-900 flex gap-8 flex-col md:flex-row justify-start items-center p-12">
+                            <img class="w-[300px] h-[350px]" src="./assets/anisRahman.png" alt="Anis Rahman">
+                            <div class="borderr-2 border-red-900">
+                                <h5 class="font-[600] text-[16px] text-[#017848] leading-[26px]">BFB Co-Founder, BOD & CEO</h5>
+                                <h2 class="font-[700] text-[24px] leading-[34px] text-[#111211] mb-[24px]">Anis Rahman</h2>
+                                <p class="font-[500] text-[18px] leading-[28px] text-[#111211]">
+                                Anis Rahman is a distinguished Bangladeshi-American professional whose remarkable career spans across the corporate and philanthropic sectors. With a solid educational foundation in Mechanical Engineering and an MBA from a prestigious university, Rahman has seamlessly transitioned from academia to leadership roles in some of the most prominent companies in the United States. His academic training equipped him with the technical expertise and business...
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pagination dots -->
+                    <div class="swiper-pagination"></div>
+                </div>
+                
             </div>
-        </div> 
+        </div>
 
         <!-- economic impact -->
         <div class="economic_impact display_hide">
@@ -272,86 +331,96 @@
         </div>
 
         <!-- FAQ -->
-        <div class="display_hide">
-            <h1 class="faq_title">Frequently Asked Questions</h1>
-            <div class="questions">
-                <div class="question1">
-                    <h4>1. What is BFB?</h4>
-                    <img src="./assets/greenPlus.png" alt="green_plus">
+        <div class="container side_padding">
+            <h1 class="font-[700] text-[48px] leading-[64px] text-center mt-[175px] mb-[48px]">Frequently Asked Questions</h1>
+            <div class="pl-[210px] pr-[210px]">
+                <div class="collapse collapse-plus bg-base-100 border border-base-300 mb-[16px]">
+                    <input type="radio" name="my-accordion-3" checked="checked" />
+                    <div class="collapse-title font-[500] text-[20px] leading-[30px] text-[#171817]">1. What is BFB?</div>
+                    <div class="collapse-content font-[500] text-[18px] leading-[28px] text-[#292B29]"><hr class="mb-[20px] text-[#9D9D9D]"/>Anyone, anywhere. If you're a Bangladeshi living abroad, you can contribute financially or by spreading the word. BFB is open to individuals whose roots belong to Bangladesh and want to contribute to his/her motherland. .</div>
                 </div>
-                <div class="question2_div">
-                    <div class="question2">
-                        <h4>2. Who can contribute to BFB?</h4>
-                        <img src="./assets/ic_baseline-minus.png" alt="green_plus">
-                    </div>
-                    <hr class="question2_hr">
-                    <p class="question2_answer">Anyone, anywhere. If you're a Bangladeshi living abroad, you can contribute financially or by spreading the word. BFB is open to individuals whose roots belong to Bangladesh and want to contribute to his/her motherland. </p>
+                <div class="collapse collapse-plus bg-base-100 border border-base-300 mb-[16px]">
+                    <input type="radio" name="my-accordion-3"/>
+                    <div class="collapse-title font-[500] text-[20px] leading-[30px] text-[#171817]">2. Who can contribute to BFB?</div>
+                    <div class="collapse-content font-[500] text-[18px] leading-[28px] text-[#292B29]"><hr class="mb-[20px] text-[#9D9D9D]"/>Anyone, anywhere. If you're a Bangladeshi living abroad, you can contribute financially or by spreading the word. BFB is open to individuals whose roots belong to Bangladesh and want to contribute to his/her motherland. .</div>
                 </div>
-                <div class="question1">
-                    <h4>3. How does BFB ensure that funds are used effectively?</h4>
-                    <img src="./assets/greenPlus.png" alt="green_plus">
+                <div class="collapse collapse-plus bg-base-100 border border-base-300 mb-[16px]">
+                    <input type="radio" name="my-accordion-3" />
+                    <div class="collapse-title font-[500] text-[20px] leading-[30px] text-[#171817]">3. How does BFB ensure that funds are used effectively?</div>
+                    <div class="collapse-content font-[500] text-[18px] leading-[28px] text-[#292B29]"><hr class="mb-[20px] text-[#9D9D9D]"/>Anyone, anywhere. If you're a Bangladeshi living abroad, you can contribute financially or by spreading the word. BFB is open to individuals whose roots belong to Bangladesh and want to contribute to his/her motherland. .</div>
                 </div>
-                <div class="question1">
-                    <h4>4. What sectors does BFB support?</h4>
-                    <img src="./assets/greenPlus.png" alt="green_plus">
+                <div class="collapse collapse-plus bg-base-100 border border-base-300 mb-[16px]">
+                    <input type="radio" name="my-accordion-3"/>
+                    <div class="collapse-title font-[500] text-[20px] leading-[30px] text-[#171817]">4. What sectors does BFB support?</div>
+                    <div class="collapse-content font-[500] text-[18px] leading-[28px] text-[#292B29]"><hr class="mb-[20px] text-[#9D9D9D]"/>Anyone, anywhere. If you're a Bangladeshi living abroad, you can contribute financially or by spreading the word. BFB is open to individuals whose roots belong to Bangladesh and want to contribute to his/her motherland. .</div>
                 </div>
-                <div class="question1">
-                    <h4>5. Can I track the impact of my contributions?</h4>
-                    <img src="./assets/greenPlus.png" alt="green_plus">
+                <div class="collapse collapse-plus bg-base-100 border border-base-300 mb-[16px]">
+                    <input type="radio" name="my-accordion-3"/>
+                    <div class="collapse-title font-[500] text-[20px] leading-[30px] text-[#171817]">5. Can I track the impact of my contributions?</div>
+                    <div class="collapse-content font-[500] text-[18px] leading-[28px] text-[#292B29]"><hr class="mb-[20px] text-[#9D9D9D]"/>Anyone, anywhere. If you're a Bangladeshi living abroad, you can contribute financially or by spreading the word. BFB is open to individuals whose roots belong to Bangladesh and want to contribute to his/her motherland. .</div>
                 </div>
-                <div class="question1">
-                    <h4>6. Is my donation tax-deductible?</h4>
-                    <img src="./assets/greenPlus.png" alt="green_plus">
+                <div class="collapse collapse-plus bg-base-100 border border-base-300 mb-[16px]">
+                    <input type="radio" name="my-accordion-3"/>
+                    <div class="collapse-title font-[500] text-[20px] leading-[30px] text-[#171817]">6. Is my donation tax-deductible?</div>
+                    <div class="collapse-content font-[500] text-[18px] leading-[28px] text-[#292B29]"><hr class="mb-[20px] text-[#9D9D9D]"/>Anyone, anywhere. If you're a Bangladeshi living abroad, you can contribute financially or by spreading the word. BFB is open to individuals whose roots belong to Bangladesh and want to contribute to his/her motherland. .</div>
                 </div>
-                <div class="question1">
-                    <h4>7. Is BFB a government initiative?</h4>
-                    <img src="./assets/greenPlus.png" alt="green_plus">
+                <div class="collapse collapse-plus bg-base-100 border border-base-300 mb-[16px]">
+                    <input type="radio" name="my-accordion-3"/>
+                    <div class="collapse-title font-[500] text-[20px] leading-[30px] text-[#171817]">7. Is BFB a government initiative?</div>
+                    <div class="collapse-content font-[500] text-[18px] leading-[28px] text-[#292B29]"><hr class="mb-[20px] text-[#9D9D9D]"/>Anyone, anywhere. If you're a Bangladeshi living abroad, you can contribute financially or by spreading the word. BFB is open to individuals whose roots belong to Bangladesh and want to contribute to his/her motherland. .</div>
                 </div>
-                <div class="question1">
-                    <h4>8. How can I get involved beyond donating?</h4>
-                    <img src="./assets/greenPlus.png" alt="green_plus">
+                <div class="collapse collapse-plus bg-base-100 border border-base-300 mb-[16px]">
+                    <input type="radio" name="my-accordion-3"/>
+                    <div class="collapse-title font-[500] text-[20px] leading-[30px] text-[#171817]">8. How can I get involved beyond donating?</div>
+                    <div class="collapse-content font-[500] text-[18px] leading-[28px] text-[#292B29]"><hr class="mb-[20px] text-[#9D9D9D]"/>Anyone, anywhere. If you're a Bangladeshi living abroad, you can contribute financially or by spreading the word. BFB is open to individuals whose roots belong to Bangladesh and want to contribute to his/her motherland. .</div>
                 </div>
-                <div class="question1">
-                    <h4>9. How is BFB different from other crowdfunding platforms?</h4>
-                    <img src="./assets/greenPlus.png" alt="green_plus">
+                <div class="collapse collapse-plus bg-base-100 border border-base-300 mb-[16px]">
+                    <input type="radio" name="my-accordion-3"/>
+                    <div class="collapse-title font-[500] text-[20px] leading-[30px] text-[#171817]">9. How is BFB different from other crowdfunding platforms?</div>
+                    <div class="collapse-content font-[500] text-[18px] leading-[28px] text-[#292B29]"><hr class="mb-[20px] text-[#9D9D9D]"/>Anyone, anywhere. If you're a Bangladeshi living abroad, you can contribute financially or by spreading the word. BFB is open to individuals whose roots belong to Bangladesh and want to contribute to his/her motherland. .</div>
                 </div>
-                <div class="question1">
-                    <h4>10. Why should the diaspora trust BFB?</h4>
-                    <img src="./assets/greenPlus.png" alt="green_plus">
+                <div class="collapse collapse-plus bg-base-100 border border-base-300 mb-[16px]">
+                    <input type="radio" name="my-accordion-3" />
+                    <div class="collapse-title font-[500] text-[20px] leading-[30px] text-[#171817]">10. Why should the diaspora trust BFB?</div>
+                    <div class="collapse-content font-[500] text-[18px] leading-[28px] text-[#292B29]"><hr class="mb-[20px] text-[#9D9D9D]"/>Anyone, anywhere. If you're a Bangladeshi living abroad, you can contribute financially or by spreading the word. BFB is open to individuals whose roots belong to Bangladesh and want to contribute to his/her motherland. .</div>
                 </div>
             </div>
         </div>
 
         <!--what's next -->
-        <div class="whats_next display_hide">
-            <h1 class="whats_next_title">What's Coming Next?</h1>
-            <div class="whats_next_desc">
-                <div class="track_info">
-                    <img class="tracker" src="./assets/trackor.jpg" alt="tracker">
-                    <button class="tracker_price">$2000</button>
-                </div>
-                <div class="whats_next_text">
-                    <h1 class="whats_next_headline">BFB Participates in BMANA <br> Conference in Orlando, FL.</h1>
-                    <p class="whats_next_paragraph">Let's meet at this historic event, where all the top <br> significant members of our agricultural industry will <br> present their insights and development plan under one <br> roof.</p>
-                    <div class="time_location">
-                        <div class="calendar">
-                            <img src="./assets/calendar.png" alt="calendar">
-                            <h4>Mar 24, 2026 to Mar 25, 2026</h4>
-                        </div>
-                        <div class="location">
-                            <img src="./assets/location.png" alt="location">
-                            <h4>Sheraton Hotel Dhaka</h4>
-                        </div>
-                        <div class="building">
-                            <img src="./assets/building.png" alt="building">
-                            <h4>Business Asia</h4>
+        <div class="container side_padding display_hide">
+            <div class="whats_next mt-[88px]">
+                <h1 class="font-[700] text-[48px] leading-[64px] text-center">What's Coming Next?</h1>
+                <div class="whats_next_desc">
+                    <div class="track_info">
+                        <img class="tracker" src="./assets/trackor.jpg" alt="tracker">
+                        <button class="tracker_price">$2000</button>
+                    </div>
+                    <div class="whats_next_text">
+                        <h1 class="whats_next_headline">BFB Participates in BMANA <br> Conference in Orlando, FL.</h1>
+                        <p class="whats_next_paragraph">Let's meet at this historic event, where all the top <br> significant members of our agricultural industry will <br> present their insights and development plan under one <br> roof.</p>
+                        <div class="time_location">
+                            <div class="calendar">
+                                <img src="./assets/calendar.png" alt="calendar">
+                                <h4>Mar 24, 2026 to Mar 25, 2026</h4>
+                            </div>
+                            <div class="location">
+                                <img src="./assets/location.png" alt="location">
+                                <h4>Sheraton Hotel Dhaka</h4>
+                            </div>
+                            <div class="building">
+                                <img src="./assets/building.png" alt="building">
+                                <h4>Business Asia</h4>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
+
         <!-- slider -->
-            <div class="sliders display_hide">
+        <div class="sliders display_hide">
                 <div class="slider_1"></div>
                 <div class="slider_2"></div>
                 <div class="slider_3"></div>
@@ -360,21 +429,23 @@
         
 
         <!-- mobile app -->
-        <div class="mobileApp_parent display_hide">
-            <div class="mobilepp_section">
-                <div class="mobileApp_wrapper">
-                    <img class="mobileApp_img" src="./assets/mobileApp.png" alt="mobileApp">
-                </div>
+        <div class="container side_padding">
+            <div class="mobileApp_parent display_hide">
+                <div class="mobilepp_section">
+                    <div class="mobileApp_wrapper">
+                        <img class="mobileApp_img" src="./assets/mobileApp.png" alt="mobileApp">
+                    </div>
 
-                <div class="app_content">
-                    <h2>Download the BFB App Now</h2>
-                    <h5>Invest in Bangladesh. Build the Future. Transform Lives.</h5>
+                    <div class="app_content">
+                        <h2>Download the BFB App Now</h2>
+                        <h5>Invest in Bangladesh. Build the Future. Transform Lives.</h5>
 
-                    <div class="qr_section">
-                        <img class="qrCode" src="./assets/qrcode.jpg" alt="qrcode">
-                        <div class="qr_text">
-                        <h4>Scan to download the app</h4>
-                        <img class="arrow_img" src="./assets/rotatedArrow.png" alt="rotatedArrow">
+                        <div class="qr_section">
+                            <img class="qrCode" src="./assets/qrcode.jpg" alt="qrcode">
+                            <div class="qr_text">
+                            <h4>Scan to download the app</h4>
+                            <img class="arrow_img" src="./assets/rotatedArrow.png" alt="rotatedArrow">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -383,73 +454,75 @@
     </main>
 
     <!-- footer -->
-    <footer class="display_hide">
-        <div class="footer_container">
-            <div class="logo_btn">
-                <img class="footer_bfb_logo" src="./assets/BFB_Logo.png" alt="BFB_Logo">
-                <h5 class="footer_caption">Cause. Contribution. Change</h5>
-                <div class="btns">
-                    <button class="google_btn">
-                        <img class="google_btn_img" src="./assets/google_play_store.png" alt="mage_playstore">
-                        <div class="google_btn_text">
-                            <h4>GET IT NOW</h4>
-                            <h3>Google Play</h4>
-                        </div>
-                    </button>
-                    <button class="appStore_btn">
-                        <img class="app_btn_img" src="./assets/Vector.png" alt="Vector">
-                        <div>
-                            <h4>Download it On</h4>
-                            <h3>App Store</h4>
-                        </div>
-                    </button>
+    <div class="container side_padding">
+        <footer class="display_hide">
+            <div class="footer_container">
+                <div class="logo_btn">
+                    <img class="footer_bfb_logo" src="./assets/BFB_Logo.png" alt="BFB_Logo">
+                    <h5 class="footer_caption">Cause. Contribution. Change</h5>
+                    <div class="btns">
+                        <button class="google_btn">
+                            <img class="google_btn_img" src="./assets/google_play_store.png" alt="mage_playstore">
+                            <div class="google_btn_text">
+                                <h4>GET IT NOW</h4>
+                                <h3>Google Play</h4>
+                            </div>
+                        </button>
+                        <button class="appStore_btn">
+                            <img class="app_btn_img" src="./assets/Vector.png" alt="Vector">
+                            <div>
+                                <h4>Download it On</h4>
+                                <h3>App Store</h4>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+                <div class="footer_links">
+                    <div>
+                        <h5>Pages</h5>
+                        <hr class="hr_footer">
+                        <ul class="pages">
+                            <li>About Us</li>
+                            <li>Contact Us</li>
+                            <li>Blog</li>
+                            <li>Events</li>
+                            <li>Media & Press</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h5>Account</h5>
+                        <hr class="hr_footer">
+                        <ul class="account">
+                            <li>Privacy Policy</li>
+                            <li>Terms & Conditions</li>
+                            <li>FAQ</li>
+                            <li>Events</li>
+                            <li>Media & Press</li>
+                        </ul>
+                    </div>
+                    <div class="SM_links">
+                        <h5>Social Media</h5>
+                        <hr class="hr_footer">
+                        <ul class="SM">
+                            <li>Facebook</li>
+                            <li>Twitter</li>
+                            <li>Instagram</li>
+                            <li>Threads</li>
+                            <li>LinkedIn</li>
+                            <li>Youtube</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="footer_links">
-                <div>
-                    <h5>Pages</h5>
-                    <hr class="hr_footer">
-                    <ul class="pages">
-                        <li>About Us</li>
-                        <li>Contact Us</li>
-                        <li>Blog</li>
-                        <li>Events</li>
-                        <li>Media & Press</li>
-                    </ul>
-                </div>
-                <div>
-                    <h5>Account</h5>
-                    <hr class="hr_footer">
-                    <ul class="account">
-                        <li>Privacy Policy</li>
-                        <li>Terms & Conditions</li>
-                        <li>FAQ</li>
-                        <li>Events</li>
-                        <li>Media & Press</li>
-                    </ul>
-                </div>
-                <div class="SM_links">
-                    <h5>Social Media</h5>
-                    <hr class="hr_footer">
-                    <ul class="SM">
-                        <li>Facebook</li>
-                        <li>Twitter</li>
-                        <li>Instagram</li>
-                        <li>Threads</li>
-                        <li>LinkedIn</li>
-                        <li>Youtube</li>
-                    </ul>
+            <div class="footer_bottom">
+                <div class="footer_bottom_text">
+                    <h4>Copyright 2025 all rights reserved by BFB</h4>
+                    <hr class="footer_bottom_hr">
+                    <h4>Designed with ❤ by Ontik Creative</h4>
                 </div>
             </div>
-        </div>
-        <div class="footer_bottom">
-            <div class="footer_bottom_text">
-                <h4>Copyright 2025 all rights reserved by BFB</h4>
-                <hr class="footer_bottom_hr">
-                <h4>Designed with ❤ by Ontik Creative</h4>
-            </div>
-        </div>
-    </footer>  
+        </footer>  
+    </div>
 
      <script>
         const hamburger = document.getElementById('hamburger');
@@ -458,6 +531,29 @@
 
         hamburger.addEventListener('click', () => {
             menu.classList.toggle('active');
+        });
+    </script>
+
+
+    <script>
+        const swiper = new Swiper('.my-director-slider', {
+            effect: 'fade',
+            fadeEffect: { crossFade: true },
+            loop: true,
+            // autoplay: {
+            // delay: 5000,
+            // disableOnInteraction: false,
+            // },
+            // navigation: {
+            // nextEl: '.swiper-button-next',
+            // prevEl: '.swiper-button-prev',
+            // },
+            pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+            },
+            // optional: speed/duration of transition
+            speed: 800,
         });
     </script>
 </body>
