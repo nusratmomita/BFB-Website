@@ -33,58 +33,59 @@
     <!-- navbar section -->
     <div class="header_banner">
         <!-- header section -->
-        <header class="flex justify-between items-center px-20 py-1">
+        <header class="flex justify-between items-center px-4 lg:px-20 py-1 relative">
             <!-- Logo -->
             <a href="#" class="w-20 h-20 flex items-center justify-center">
-                <img src="./assets/BFB_Logo.png" alt="BFB Logo" class="h-72 w-72 object-contain">
+                <img src="./assets/BFB_Logo.png" alt="BFB Logo" class="h-44 w-44 lg:h-72 lg:w-72 object-contain">
             </a>
 
             <!-- Hamburger -->
-            <button id="hamburger" class="block md:hidden focus:outline-none">
+            <button id="hamburger" class="block lg:hidden focus:-none px-4 py-1">
                 <img src="./assets/hamburgerIcon.png" alt="Menu" class="w-8 h-8">
             </button>
 
-            <!-- Cross Icon (hidden by default) -->
-            <button id="cross" class="hidden md:hidden text-3xl font-bold focus:outline-none">
+            <!-- Cross Icon -->
+            <button id="cross" class="hidden lg:hidden text-6xl font-bold px-4 py-1">
                 ×
             </button>
 
             <!-- Navigation Menu -->
-            <nav class="menu_btn hidden md:flex items-center gap-6">
-                <ul class="manrope-font flex gap-10 items-center whitespace-nowrap">
-                <li><a href="#" class="hover:text-[#017848] text-[#111211] font-bold text-base">Home</a></li>
-                <!-- Dropdown -->
-                <li class="relative group hover:text-[#017848] text-[#111211] font-bold text-base">
-                    <button class="flex items-center gap-1">
-                        About Us
-                        <i class="fa-solid fa-angle-down"></i>
-                    </button>
-
-                    <!-- Dropdown -->
-                    <ul class="absolute left-0 mt-2 w-48 bg-white border border-gray-200 shadow-lg rounded hidden group-hover:block">
-                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">The Story of BFB</a></li>
-                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Our Mission & Vision</a></li>
-                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Our Board of Directors</a></li>
-                    </ul>
-                </li>
-
-                <li><a href="#" class="hover:text-[#017848] text-[#111211] font-bold text-base">Membership</a></li>
-                <li><a href="#" class="hover:text-[#017848] text-[#111211] font-bold text-base">Contact Us</a></li>
-                <li><a href="#" class="hover:text-[#017848] text-[#111211] font-bold text-base">Blog</a></li>
-                <li><a href="#" class="hover:text-[#017848] text-[#111211] font-bold text-base">Events</a></li>
-                <li><a href="#" class="hover:text-[#017848] text-[#111211] font-bold text-base">Media & Press</a></li>
+            
+            <nav id="mobileMenu" class="hidden lg:border-none lg:flex lg:flex-row lg:items-center gap-6 absolute lg:static top-full left-0 w-full lg:w-auto lg:bg-transparent z-40">
+                <ul class="manrope-font flex flex-col lg:flex-row gap-4 text-center lg:items-center whitespace-nowrap px-4 lg:px-0 py-4 lg:py-0">
+                    <!-- <hr class="block text-black border-6 -mt-4 mb-8 lg:hidden"> -->
+                    <li class="lg:pl-[0px] lg:pr-[0px] w-full pt-[12px] pb-[12px] text-center mb-[2px] lg:hover:text-[#017848] lg:p-0 lg:m-0 font-[600] text-[16px] leading-[26px] text-[#111211] lg:font-bold lg:text-base hover:bg-[#E6F2ED] lg:hover:bg-transparent"><a href="#">Home</a></li>
+                    <li class="relative group lg:pl-[0px] lg:pr-[0px] w-full pt-[12px] pb-[12px] text-center mb-[2px] lg:hover:text-[#017848] lg:p-0 lg:m-0 font-[600] text-[16px] leading-[26px] text-[#111211] lg:font-bold lg:text-base hover:bg-[#E6F2ED] lg:hover:bg-transparent">
+                        <a href="#" class="flex items-center justify-center gap-1">
+                        About Us <i class="hidden lg:block fa-solid fa-angle-down"></i>
+                        </a>
+                        <ul class="absolute left-0 top-full bg-white hidden lg:group-hover:block shadow-lg">
+                            <li><a href="#" class="block px-4 py-2 hover:text-[#017848] text-[#111211] border-b border-[#EAEAEA]">The Story of BFB</a></li>
+                            <li><a href="#" class="block px-4 py-2 hover:text-[#017848] text-[#111211] border-b border-[#EAEAEA]">Our Mission & Vision</a></li>
+                            <li><a href="#" class="block px-4 py-2 hover:text-[#017848] text-[#111211] border-b border-[#EAEAEA]">Our Board of Directors</a></li>
+                        </ul>
+                    </li>
+                    <li class="lg:pl-[0px] lg:pr-[0px] w-full pt-[12px] pb-[12px] text-center mb-[2px] lg:hover:text-[#017848] lg:p-0 lg:m-0 font-[600] text-[16px] leading-[26px] text-[#111211] lg:font-bold lg:text-base hover:bg-[#E6F2ED] lg:hover:bg-transparent"><a href="#" >Membership</a></li>
+                    <li class="lg:pl-[0px] lg:pr-[0px] w-full pt-[12px] pb-[12px] text-center mb-[2px] lg:hover:text-[#017848] lg:p-0 lg:m-0 font-[600] text-[16px] leading-[26px] text-[#111211] lg:font-bold lg:text-base hover:bg-[#E6F2ED] lg:hover:bg-transparent"><a href="#">Contact Us</a></li>
+                    <li class="lg:pl-[0px] lg:pr-[0px] w-full pt-[12px] pb-[12px] text-center mb-[2px] lg:hover:text-[#017848] lg:p-0 lg:m-0 font-[600] text-[16px] leading-[26px] text-[#111211] lg:font-bold lg:text-base hover:bg-[#E6F2ED] lg:hover:bg-transparent"><a href="#">Blog</a></li>
+                    <li class="lg:pl-[0px] lg:pr-[0px] w-full pt-[12px] pb-[12px] text-center mb-[2px] lg:hover:text-[#017848] lg:p-0 lg:m-0 font-[600] text-[16px] leading-[26px] text-[#111211] lg:font-bold lg:text-base hover:bg-[#E6F2ED] lg:hover:bg-transparent"><a href="#">Events</a></li>
+                    <li class="lg:pl-[0px] lg:pr-[0px] w-full pt-[12px] pb-[12px] text-center mb-[2px] lg:hover:text-[#017848] lg:p-0 lg:m-0 font-[600] text-[16px] leading-[26px] text-[#111211] lg:font-bold lg:text-base hover:bg-[#E6F2ED] lg:hover:bg-transparent"><a href="#" class="">Media & Press</a></li>
                 </ul>
 
+                <hr class="block -mt-4 mb-8 lg:hidden">
                 <!-- Auth Button -->
-                <button class="manrope-font ml-4 px-[24px] py-[16px] border-2 border-[#017848] bg-[#017848] text-[#FFFFFF] leading-[16px] font-semibold text-base hover:bg-white hover:text-[#017848] hover:border-2 hover:border-[#017848] hover:leading-[16px] hover:px-[24px] hover:py-[16px] rounded-[36px]">
-                    Login/Registration
-                </button>
+                <div class="ml-4 mr-4 lg:ml-0 lg:mr-0">
+                    <button class="overflow-hidden manrope-font w-full px-4 lg:mx-0 lg:ml-4 px-6 py-3 border-2 border-[#017848] bg-[#017848] text-white font-semibold text-base rounded-[36px] hover:bg-white hover:text-[#017848] transition">
+                        Login/Registration
+                    </button>
+                </div>
             </nav>
         </header>
-        <!---->
-        <hr class="navbar_hr">
+
+
+        <hr/>
         <!-- banner second section -->
-        <div class="mt-[88px] ml-[80px]">
+        <div class="mt-[88px] ml-[80px] display_hide">
             <div class="mb-[56px] ">
                 <h1 class="font-[700] text-[80px] leading-[96px] container">Till Now - It was a Dream,<br><span class="text-[#016D42]">Now it’s a Reality</span></h1>
             </div>
@@ -116,31 +117,34 @@
             </div>
         </div>
         <!-- banner skill section -->
-        <div class="border-2 border-red-900 max-w-[1345px] h-[730px] mx-auto flex gap-5 justify-center items-center mt-[88px] bg-[#FFFFFF] rounded-[16px]">
-                <div class="mt-[56px] w-[400px] h-[616px]">
-                    <img class="w-[400px] h-[410px]" src="./assets/banner1.png" alt="grow">
-                    <div class="mt-[32px]">
-                        <h3 class="font-[700] text-[24px] mb-[10px] leading-[34px]">Skill Development</h3>
-                        <p class="font-semibold text-[16px] text-[#292B29] leading-[26px]">Contribute to human potential. From digital literacy <br> to vocational training, your contribution will equip <br> Bangladeshi individuals with the skills they need to <br> grow and build a workforce ready for tomorrow.</p>
+        <div class="display_hide ">
+            <div class="border-2 border-red-900 h-[730px] mx-auto flex gap-5 justify-center items-center mt-[88px] bg-[#FFFFFF] rounded-[16px] display_hide ">
+                    <div class="mt-[56px] w-[400px] h-[616px] ">
+                        <img class="w-[400px] h-[410px]" src="./assets/banner1.png" alt="grow">
+                        <div class="mt-[32px]">
+                            <h3 class="font-[700] text-[24px] mb-[10px] leading-[34px]">Skill Development</h3>
+                            <p class="font-semibold text-[16px] text-[#292B29] leading-[26px]">Contribute to human potential. From digital literacy <br> to vocational training, your contribution will equip <br> Bangladeshi individuals with the skills they need to <br> grow and build a workforce ready for tomorrow.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="mt-[56px] w-[400px] h-[616px]">
-                    <img class="w-[400px] h-[410px]" src="./assets/banner2.png" alt="help">
-                    <div class="mt-[32px]">
-                        <h3 class="font-[700] text-[24px] mb-[10px] leading-[34px]">Skill Development</h3>
-                        <p class="font-semibold text-[16px] text-[#292B29] leading-[26px]">Contribute to human potential. From digital literacy <br> to vocational training, your contribution will equip <br> Bangladeshi individuals with the skills they need to <br> grow and build a workforce ready for tomorrow.</p>
+                    <div class="mt-[56px] w-[400px] h-[616px]">
+                        <img class="w-[400px] h-[410px]" src="./assets/banner2.png" alt="help">
+                        <div class="mt-[32px]">
+                            <h3 class="font-[700] text-[24px] mb-[10px] leading-[34px]">Skill Development</h3>
+                            <p class="font-semibold text-[16px] text-[#292B29] leading-[26px]">Contribute to human potential. From digital literacy <br> to vocational training, your contribution will equip <br> Bangladeshi individuals with the skills they need to <br> grow and build a workforce ready for tomorrow.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="mt-[56px] w-[400px] h-[616px]">
-                    <img class="w-[400px] h-[410px]" src="./assets/banner3.png" alt="plant">
-                    <div class="mt-[32px]">
-                        <h3 class="font-[700] text-[24px] mb-[10px] leading-[34px]">Skill Development</h3>
-                        <p class="font-semibold text-[16px] text-[#292B29] leading-[26px]">Contribute to human potential. From digital literacy <br> to vocational training, your contribution will equip <br> Bangladeshi individuals with the skills they need to <br> grow and build a workforce ready for tomorrow.</p>
+                    <div class="mt-[56px] w-[400px] h-[616px]">
+                        <img class="w-[400px] h-[410px]" src="./assets/banner3.png" alt="plant">
+                        <div class="mt-[32px]">
+                            <h3 class="font-[700] text-[24px] mb-[10px] leading-[34px]">Skill Development</h3>
+                            <p class="font-semibold text-[16px] text-[#292B29] leading-[26px]">Contribute to human potential. From digital literacy <br> to vocational training, your contribution will equip <br> Bangladeshi individuals with the skills they need to <br> grow and build a workforce ready for tomorrow.</p>
+                        </div>
                     </div>
-                </div>
-        </div>
+            </div>
+        </div> 
     </div>
-    <main class="">
+
+    <main class="display_hide">
         <!-- empowering section-->
         <div class="container">
             <div class="mt-[88px] mb-[88px] mr-[90px] ml-[90px] ">
@@ -450,7 +454,7 @@
 
         <!--what's next -->
         <div class="container side_padding">
-            <div class="mt-[88px]">
+            <div class="mt-[88px] border-2 border-red-900">
                 <h1 class="font-[700] text-[48px] leading-[64px] text-center">What's Coming Next?</h1>
                 <div class="bg-[#FFFFFF] borderr-2 border-[#707170] rounded-[8px] mt-[48px] mb-[40px] ml-[188px] mr-[188px] flex flex-col lg:flex-row gap-[36px] items-center ">
                     <div class="relative pt-[32px] pb-[32px] pl-[32px]">
@@ -480,24 +484,21 @@
             </div>
         </div>        
 
-        <!-- mobileApp display: flex;
-    align-items: center;
-    gap: 30px;
-    margin-bottom: 30px;-->
+        <!-- mobileApp -->
         <div class="w-full bg-[#ffffff] pt-[88px] pt-[88px] pb-[88px] pr-[80px] pl-[80px] container side_padding">
             <div class="mobilepp_section rounded-[16px] border-[1px] border-[#D4D4D4] flex gap-[65px]">
                 <div>
-                    <img class="pt-[76px] pl-[86px]" src="./assets/maybeBetter-removebg-preview.png" alt="mobileApp">
+                    <img class="pt-[96px] pl-[86px]" src="./assets/maybeBetter-removebg-preview.png" alt="mobileApp">
                 </div>
                 <div class="pt-[172px] pb-[80px] -pr-[222px] -pl-[533px] flex flex-col justify-center">
                     <h2 class="font-[700] text-[40px] leading-[54px] text-[#111211] mb-[12px]">Download the BFB App Now</h2>
-                    <h5 class="font-[400] text-[20px] leading-[30px] text-[#1D1F1D] mb-[48px]">Invest in Bangladesh. Build the Future. Transform Lives.</h5>
+                    <h5 class="font-[500] text-[20px] leading-[30px] text-[#1D1F1D] mb-[48px]">Invest in Bangladesh. Build the Future. Transform Lives.</h5>
 
-                    <div class="qr_sectionn flex gap-[68px] justify-center items-center">
+                    <div class="relative flex gap-[68px] justify-center items-center">
                         <img class="w-[200px] h-[200px] rounded-[8px] border-[1px] border-[#D4D4D4]" src="./assets/qrcode.jpg" alt="qrcode">
-                        <div class="qr_textt">
-                            <h4 class="mt-[88px] font-[500] text-[18px] leading-[28px] text-[#016D42]">Scan to download the app</h4>
-                            <img class="arrow_img" src="./assets/rotatedArrow.png" alt="rotatedArrow">
+                        <div class="flex flex-col gap-4 justify-center items-start">
+                            <h4 class="borderr-2 border-red-900 mt-[40px] font-[500] text-[18px] leading-[28px] text-[#016D42]">Scan to download the app</h4>
+                            <img class="-mt-[45px] -ml-[35px] border4-2 border-red-900" src="./assets/rotatedArrow.png" alt="rotatedArrow">
                         </div>
                     </div>
                 </div>
@@ -505,86 +506,80 @@
         </div>
     </main>
 
-    <!-- footer -->
-    <div class="cg">
-        <footer class="">
-            <div class="footer_container">
-                <div class="logo_btn">
-                    <img class="footer_bfb_logo" src="./assets/BFB_Logo.png" alt="BFB_Logo">
-                    <h5 class="footer_caption">Cause. Contribution. Change</h5>
-                    <div class="btns">
-                        <button class="google_btn">
-                            <img class="google_btn_img" src="./assets/google_play_store.png" alt="mage_playstore">
-                            <div class="google_btn_text">
-                                <h4>GET IT NOW</h4>
-                                <h3>Google Play</h4>
-                            </div>
-                        </button>
-                        <button class="appStore_btn">
-                            <img class="app_btn_img" src="./assets/Vector.png" alt="Vector">
-                            <div>
-                                <h4>Download it On</h4>
-                                <h3>App Store</h4>
-                            </div>
-                        </button>
-                    </div>
-                </div>
-                <div class="footer_links">
-                    <div>
-                        <h5>Pages</h5>
-                        <hr class="hr_footer">
-                        <ul class="pages">
-                            <li>About Us</li>
-                            <li>Contact Us</li>
-                            <li>Blog</li>
-                            <li>Events</li>
-                            <li>Media & Press</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h5>Account</h5>
-                        <hr class="hr_footer">
-                        <ul class="account">
-                            <li>Privacy Policy</li>
-                            <li>Terms & Conditions</li>
-                            <li>FAQ</li>
-                            <li>Events</li>
-                            <li>Media & Press</li>
-                        </ul>
-                    </div>
-                    <div class="SM_links">
-                        <h5>Social Media</h5>
-                        <hr class="hr_footer">
-                        <ul class="SM">
-                            <li>Facebook</li>
-                            <li>Twitter</li>
-                            <li>Instagram</li>
-                            <li>Threads</li>
-                            <li>LinkedIn</li>
-                            <li>Youtube</li>
-                        </ul>
-                    </div>
+    <!-- footer 
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 12px;
+    color: #002D21;
+    white-space: nowrap;
+    text-align: center;-->
+    <footer class="display_hide">
+        <div class="bg-[#00321E] text-[#FFFFFF] flex justify-center items-center gap-[122px]">
+            <div class="borderr-2 border-white flex flex-col items-start ml-[80px] mr-[320px] mt-[112px] mb-[155px]">
+                <img class="w-[120px] h-[120px] mb-[24px] borderr-2 border-white -ml-[20px]" src="./assets/BFB_Logo.png" alt="BFB_Logo">
+                <h5 class="mb-[40px] font-[600] text-[16px] leading-[26px]">Cause. Contribution. Change</h5>
+                <div class="flex gap-3">
+                    <button class="w-[162px] h-[62px] rounded-[8px] border-none pt-[12px] pb-[12px] pl-[16px] pr-[16px] bg-[#FFFFFF] flex gap-2 justify-center items-center">
+                        <img class="w-[32px] h-[32px]" src="./assets/google_play_store.png" alt="mage_playstore">
+                        <div class="flex flex-col justify-start items-start">
+                            <h4 class="font-[500] text-[12px] leading-[12px] poppins-regular text-[#002D21]">GET IT NOW</h4>
+                            <h3 class="font-[600] text-[16px] leading-[26px] manrope-font text-[#002D21] text-center">Google Play</h4>
+                        </div>
+                    </button>
+                    <button class="w-[162px] h-[62px] rounded-[8px] border-none pt-[12px] pb-[12px] pl-[16px] pr-[16px] bg-[#FFFFFF] flex gap-2 justify-center items-center">
+                        <img class="w-[32px] h-[32px]" src="./assets/Vector.png" alt="Vector">
+                        <div class="flex flex-col justify-start items-start">
+                            <h4 class="font-[500] text-[12px] leading-[12px] poppins-regular text-[#002D21] whitespace-nowrap">Download it On</h4>
+                            <h3 class="font-[600] text-[16px] leading-[26px] manrope-font text-[#002D21] text-center">App Store</h4>
+                        </div>
+                    </button>
                 </div>
             </div>
-            <div class="footer_bottom">
-                <div class="footer_bottom_text">
-                    <h4>Copyright 2025 all rights reserved by BFB</h4>
-                    <hr class="footer_bottom_hr">
-                    <h4>Designed with ❤ by Ontik Creative</h4>
+            <div class="footer_linkss flex gap-[72px] justify-center items-center border-2 border-white">
+                <div>
+                    <h5>Pages</h5>
+                    <hr class="hr_footer">
+                    <ul class="pages">
+                        <li>About Us</li>
+                        <li>Contact Us</li>
+                        <li>Blog</li>
+                        <li>Events</li>
+                        <li>Media & Press</li>
+                    </ul>
+                </div>
+                <div>
+                    <h5>Account</h5>
+                    <hr class="hr_footer">
+                    <ul class="account">
+                        <li>Privacy Policy</li>
+                        <li>Terms & Conditions</li>
+                        <li>FAQ</li>
+                        <li>Events</li>
+                        <li>Media & Press</li>
+                    </ul>
+                </div>
+                <div class="SM_links">
+                    <h5>Social Media</h5>
+                    <hr class="hr_footer">
+                    <ul class="SM">
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Threads</li>
+                        <li>LinkedIn</li>
+                        <li>Youtube</li>
+                    </ul>
                 </div>
             </div>
-        </footer>  
-    </div>
-
-     <script>
-        const hamburger = document.getElementById('hamburger');
-        const menu = document.getElementById('menu');
-        const crossIcon = document.getElementById("cross");
-
-        hamburger.addEventListener('click', () => {
-            menu.classList.toggle('active');
-        });
-    </script>
+        </div>
+        <div class="footer_bottom">
+            <div class="footer_bottom_text">
+                <h4>Copyright 2025 all rights reserved by BFB</h4>
+                <hr class="footer_bottom_hr">
+                <h4>Designed with ❤ by Ontik Creative</h4>
+            </div>
+        </div>
+    </footer>  
 
 
     <script>
@@ -608,5 +603,24 @@
             // speed: 800,
         });
     </script>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const cross = document.getElementById('cross');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        hamburger.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            hamburger.classList.toggle('hidden');
+            cross.classList.toggle('hidden');
+        });
+
+        cross.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            hamburger.classList.toggle('hidden');
+            cross.classList.toggle('hidden');
+        });
+    </script>
+
 </body>
 </html>
