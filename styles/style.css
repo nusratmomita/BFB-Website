@@ -23,6 +23,12 @@ body{
   font-style: normal;
 }
 
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .display_hide{
   display: none;
 }
@@ -252,198 +258,24 @@ marquee{
     gap: 20px;
 }
 
-/* faq section */
-/* .faq_title{
-    margin-top: 88px;
-    margin-bottom: 48px;
-    padding-right: 393px;
-    padding-left: 393px;
-    text-align: center;
-}
-.questions{
-    margin-left: 201px;
-    margin-right: 201px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.question1{
-    text-align: center;
-    border-radius: 16px;
-    border: 1px solid #9D9D9D;
-    padding: 20px 30px;
-    background-color: #FFFFFF;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-}
-
-.question1 h4{
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 30px;
-    color: #171817;
-}
-
-.question1 img{
-    height: 16.33px;
-}
-
-.question2_div{
-    border: 1px solid #9D9D9D;
-    padding: 20px 30px;
-    background-color: #FFFFFF;
-    border-radius: 16px;
-    border: 1px solid #9D9D9D;
-    padding: 20px 30px;
-}
-.question2{
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-}
-
-.question2 h4{
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 30px;
-    color: #171817;
-}
-
-.question2 img{
-    height: 16.33px;
-}
-
-.question2_hr{
-    border: none;
-    height: 1px;
-    background: linear-gradient(to right, #616060, #616060);
-    margin-top: 30px;
-    margin-bottom: 10px;
-}
-
-.question2_answer{
-    margin-top: 30px;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 28px;
-} */
-
-/* what's next */
-.whats_next_title{
-    margin-top: 88px;
-    text-align: center;
-}
-
-.whats_next_desc{
-    background-color: #FFFFFF;
-    margin-left: 188px;
-    margin-right: 188px;
-    margin-top: 48px;
-    display: flex;
-    align-items: center;
-    gap: 32px;
-    border-radius: 8px;
-}
-
-.track_info{
-    position: relative;
-}
-
-.tracker{
-    width: 528px;
-    height: 342px;
-    border-radius: 8px;
-    padding-left: 32px;
-    padding-top: 32px;
-    padding-bottom: 32px;
-}
-
-.whats_next_headline{
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 34px;
-    color: #111211;
-}
-
-.whats_next_paragraph{
-    margin-top: 12px;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 26px;
-}
-
-.time_location{
-    margin-top: 20px;
-}
-.calendar,.location, .building{
-    display: flex;
-    gap: 8px;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-    letter-spacing: -0.2px;
-    margin-top: 8px;
-}
-
-.tracker_price{
-    position: absolute;
-    bottom: 50px;
-    color: #017848;
-    padding: 6px 12px;
-    left: 60px;
-    border-radius: 4px;
-    border: none;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 28px;
-}
 
 
 /* ! Spacing problem problem - 7 */
 /* mobilepp_section */
-.mobileApp_parent {
-    margin-top: 80px;
-    background-color: #ffffff;
-    padding: 88px 120px;
-}
-
-/* mobilepp_section */
 .mobilepp_section {
-    width: 1280px;
-    display: flex;
-    align-items: center;
-    /* justify-content: center; */
-    gap: 64px;
-    border-radius: 20px;
     background-image: url("./../assets/banner.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-/* Phone mockup container — to crop the image */
-.mobileApp_wrapper {
-    width: 385px;
-    height: 100%;
-}
-
 /* ! unable to do this problem - 6*/
-.mobileApp_img {
-    width: 385px;
-    object-fit: contain;
-    margin-top: 76px;
-    margin-left: 83px;
-}
+
 
 /* Text and QR section */
 .app_content {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center; */
     /* max-width: 500px; */
 }
 
