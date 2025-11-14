@@ -50,9 +50,9 @@
             </button>
 
             <!-- Navigation Menu -->
-            <nav id="mobileMenu" class="hidden lg:border-none lg:flex lg:flex-row lg:items-center gap-6 absolute lg:static top-full left-0 w-full lg:w-auto lg:bg-transparent z-40">
+            <nav id="mobileMenu" class="hidden lg:border-none lg:flex lg:flex-row lg:items-center gap-6 absolute lg:static top-full bg-white left-0 w-full lg:w-auto lg:bg-transparent z-40">
                 <ul class="manrope-font flex flex-col lg:flex-row gap-[24px] text-center lg:items-center whitespace-nowrap px-4 lg:px-0 py-4 lg:py-0">
-                    <hr class="block text-black w-6 h-full border-none -mt-4 mb-8 lg:hidden">
+                    <!-- <hr class="block w-full h-full border-none -mt-4 mb-8 lg:hidden"> -->
                     <li class="borderr-2 border-red-900 lg:pl-[12px] lg:pr-[12px] w-full pt-[12px] pb-[12px] lg:pt-[8px] lg:pb-[8px] mb-[2px] lg:hover:text-[#017848] lg:m-0 font-[600] text-[16px] leading-[26px] text-[#111211] lg:font-bold lg:text-base hover:bg-[#E6F2ED] lg:hover:bg-transparent"><a href="#">Home</a></li>
                     <li class="relative group lg:pl-[12px] lg:pr-[12px] w-full pt-[12px] pb-[12px] lg:pt-[8px] lg:pb-[8px] mb-[2px] lg:hover:text-[#017848] lg:m-0 font-[600] text-[16px] leading-[26px] text-[#111211] lg:font-bold lg:text-base hover:bg-[#E6F2ED] lg:hover:bg-transparent">
                         <a href="#" class="flex items-center justify-center gap-1">
@@ -81,29 +81,31 @@
             </nav>
         </header>
 
-
         <hr/>
         <!-- banner second section -->
-        <div class="mt-[88px] ml-[80px] display_hide">
+        <div class="mt-[56px] lg:mt-[88px] ml-[16px] mr-[16px] lg:mr-0 lg:ml-[80px]">
             <div class="mb-[56px] ">
-                <h1 class="font-[700] text-[80px] leading-[96px] container">Till Now - It was a Dream,<br><span class="text-[#016D42]">Now it’s a Reality</span></h1>
+                <h1 class="font-[700] text-left text-[50px] lg:text-[80px] leading-[60px] lg:leading-[96px] container">Till Now - It was a Dream,<br><span class="text-[#016D42]">Now it’s a Reality</span></h1>
             </div>
-            <div class="banner_info flex gap-37 container">
+            <div class="banner_info flex flex-col lg:flex-row gap-[115px] container">
                 <div class="relative">
-                    <div class="banner_images flex">
-                        <img class="bannerH1 w-[56px] h-[56px] border-4 border-[#FFFFFF] rounded-[100%]" src="./assets/bannerH1.png" alt="bannerH1">
-                        <img class="bannerH2 w-[56px] h-[56px] border-4 border-[#FFFFFF] rounded-[100%] -ml-[20px]" src="./assets/bannerH2.png" alt="bannerH2">
-                        <img class="bannerH3 w-[56px] h-[56px] border-4 border-[#FFFFFF] rounded-[100%] -ml-[20px]" src="./assets/bannerH1.png" alt="bannerH1">
-                        <div class="bg-[#017848] w-[56px] h-[56px] border-4 border-[#FFFFFF] rounded-[100%] flex justify-center items-center -ml-[23px]">
+                    <div class="flex">
+                        <img class="cursor-pointer hover:-mt-1 hover:mr-5 w-[56px] h-[56px] border-2 border-[#FFFFFF] rounded-[100%] transition-all" src="./assets/bannerH1.png" alt="bannerH1">
+                        <img class="cursor-pointer hover:-mt-1 hover:mr-5 w-[56px] h-[56px] border-2 border-[#FFFFFF] rounded-[100%] -ml-[20px] transition-all" src="./assets/bannerH2.png" alt="bannerH2">
+                        <img class="cursor-pointer hover:-mt-1 hover:mr-5 w-[56px] h-[56px] border-2 border-[#FFFFFF] rounded-[100%] -ml-[20px] transition-all" src="./assets/bannerH1.png" alt="bannerH1">
+                        <div class="cursor-pointer bg-[#017848] hover:-mt-1 hover:mr-5 transition-all w-[56px] h-[56px] border-2 border-[#FFFFFF] rounded-[100%] flex justify-center items-center -ml-[23px]">
                             <img class="w-5 h-5" src="./assets/plus.png" alt="plus_icon">
                         </div>
                     </div>
-                    <h4 class="manrope-font font-semibold leading-[26px] text-[16px] mt-[16px]">More than 500+ people are </br>connected</h4>
-                    <img class="absolute left-35 top-19" src="./assets/banner_arrow.png" alt="wave">
+                    <h4 class="hidden lg:block manrope-font font-semibold leading-[26px] text-[16px] mt-[16px] ">More than 500+ people are </br>connected</h4>
+                    <h4 class="lg:hidden block manrope-font font-semibold leading-[26px] text-[16px] mt-[16px] ">More than 500+ people are connected</h4>
+                    <img class="hidden lg:block absolute left-35 top-19" src="./assets/banner_arrow.png" alt="wave">
+                    <img class="lg:hidden block w-[100px] h-[100px] -rotate-50 mt-2 ml-[110px] mr-[130px] -mb-[110px]" src="./assets/rotatedArrow.png" alt="wave">
                 </div>
                 <div>
-                    <div class="font-[600] text-[20px] leading-[30px] text-[#171817] mb-[30px]">The Billions For Bangladesh initiative is an ambitious diaspora-<br/> driven plan designed to raise and invest 1 billion USD for <br> Bangladesh’s economic development.</div>
-                    <div class="flex gap-[8px] mt-[30px]">
+                    <div class="hidden lg:block font-[600] text-[16px] leading-[26px] lg:text-[20px] lg:leading-[30px] text-[#171817] mb-[30px]">The Billions For Bangladesh initiative is an ambitious diaspora-<br/> driven plan designed to raise and invest 1 billion USD for <br> Bangladesh’s economic development.</div>
+                    <div class="lg:hidden block font-[600] text-[16px] leading-[26px] lg:text-[20px] lg:leading-[30px] text-[#171817] mb-[30px]">The Billions For Bangladesh initiative is an <br> ambitious diaspora-driven plan designed to <br> raise and invest 1 billion USD for <br> Bangladesh’s economic development.</div>
+                    <div class="flex flex-col lg:flex-row gap-[8px] mt-[30px]">
                         <button class="bg-[#017848] text-[#FFFFFF] font-[600] text-[16px] leading-[16px] rounded-[36px] px-[24px] py-[16px] border-2 border-[#017848] hover:leading-[16px] hover:rounded-[36px] hover:px-[24px] hover:py-[16px] hover:bg-white hover:text-[#017848] hover:border-2 hover:border-[#017848] manrope-font">
                             Download Now
                         </button>
