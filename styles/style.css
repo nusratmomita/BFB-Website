@@ -254,64 +254,6 @@ marquee{
     background-size: cover;
 }
 
-
-
-/* footer */
-
-
-.pages, .account, .SM {
-    list-style: none;
-    display: block;
-}
-
-.footer_links h5{
-    /* margin-bottom: 32px; */
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 30px;
-}
-
-.footer_links ul>li{
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 26px;
-}
-
-.footer_links{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 72px;
-}
-
-footer ul>li{
-    margin-bottom: 16px;
-}
-
-.SM_links{
-    margin-top: 40px;
-}
-
-.hr_footer{
-    margin-top: 20px;
-    border: none;
-    width: 194px;
-    height: 1px;
-    background: linear-gradient(to right, #014228, #014228);
-}
-
-
-.footer_bottom{
-    background-color: #014228;
-    color: #FFFFFF;
-}
-
-.footer_bottom_text{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .footer_bottom_text h4{
     font-weight: 400;
     font-size: 16px;
