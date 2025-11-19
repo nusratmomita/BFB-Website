@@ -33,7 +33,7 @@
     <!-- navbar section -->
     <div class="header_banner">
         <!-- header section -->
-        <header class="container side_padding flex justify-between items-center px-4 lg:px-20 py-1">
+        <header id="banner" class="container side_padding flex justify-between items-center px-4 lg:px-20 py-1">
             <!-- Logo -->
             <a href="#" class="w-20 h-20 flex items-center justify-center">
                 <img src="./assets/BFB_Logo.png" alt="BFB Logo" class="h-44 w-44 lg:h-72 lg:w-72 object-contain">
@@ -269,7 +269,7 @@
                     <img class="object-cover xl:w-full max-w-full max-h-[640px] grow max-md:max-w-full max-md:mt-10 max-lg:m-auto" src="./assets/bridge.jpg" alt="bridge">
                 </div>
                 <div class="w-[100%] lg:w-[55%] ml-5 max-md:w-full max-md:ml-0">
-                    <h1 class="text-4xl text-red-800 font-[900]">Fix the widththing</h1>
+                    <h1 class="text-4xl text-red-800 font-[900]">Fix the width thing</h1>
                     <h1 class="font-[700] text-[32px] leading-[32px] lg:text-[40px] lg:leading-[54px] mb-[40px] lg:pl-0 px-[16px]">1 Million Diasporas Raising 1 Billion <br class="hidden lg:block"> for 1 Trillion Economic Impact - Let’s <br class="hidden lg:block"> Make it Real</h1>
                     <div class="tabs tabs-border overflow-hidden">
                         <input type="radio" name="my_tabs_2" class="tab whitespace-nowrap text-[18px] leading-[28px]" aria-label="About Us" checked="checked"/>
@@ -391,8 +391,8 @@
         </div>
         
         <!-- FAQ -->
-        <div class="container side_padding">
-            <h1 class="font-[700] text-[38px] leading-[50px] lg:text-[48px] lg:leading-[64px] text-center mt-[175px] mb-[48px]">Frequently Asked Questions</h1>
+        <div  class="container side_padding">
+            <h1 id="faq" class="font-[700] text-[38px] leading-[50px] lg:text-[48px] lg:leading-[64px] text-center mt-[175px] mb-[48px]">Frequently Asked Questions</h1>
             <div class="px-4 lg:pl-[210px] lg:pr-[210px]">
                 <div class="collapse collapse-plus bg-base-100 border border-base-300 mb-[16px]">
                     <input type="radio" name="my-accordion-3" checked="checked" />
@@ -503,9 +503,9 @@
 
     <!-- footer -->
     <footer>
-        <div class="bg-[#00321E] text-[#FFFFFF] flex flex-col lg:flex-row justify-center items-center gap-[122px]">
-            <div class="flex border-2 border-white flex-col lg:items-start mt-[112px] mb-[50px] lg:mb-[155px] mx-4 lg:mx-0">
-                <img class=" max-w-[120px] lg:h-[120px] mb-[24px] lg:-ml-[20px] -ml-[10px]" src="./assets/BFB_Logo.png" alt="BFB_Logo">
+        <div class="bg-[#00321E] text-[#FFFFFF] flex gap-[222px]">
+            <div class="borderr-2 border-white flex flex-col mt-[112px] mb-[155px] ml-[80px]">
+                <img class="max-w-[120px] lg:h-[120px] mb-[24px] lg:-ml-[20px] -ml-[10px]" src="./assets/BFB_Logo.png" alt="BFB_Logo">
                 <h5 class="mb-[40px] font-[600] text-[16px] leading-[26px]">Cause. Contribution. Change</h5>
                 <div class="flex flex-row gap-3">
                     <button class="w-[162px] h-[62px] rounded-[8px] border-none pt-[12px] pb-[12px] pl-[16px] pr-[16px] bg-[#FFFFFF] flex gap-2 justify-center items-center">
@@ -524,41 +524,40 @@
                     </button>
                 </div>
             </div>
-            <div class="flex border-2 border-white flex-col lg:flex-row gap-10 lg:gap-[52px] justify-center items-center mx-4 lg:mx-0 mb-[64px] lg:ml-[80px]">
+            <div class="w-[753px] h-[315px] borderr-2 border-white flex gap-[72px] mr-[80px] mt-[112px] mb-[112px]">
                 <div>
                     <h5 class="font-[500] text-[20px] leading-[30px]">Pages</h5>
-                    <hr class="border border-[#015533] w-[343px] lg:w-[194px] mt-[16px] mb-[16px]">
+                    <hr class="border border-[#014228] w-[343px] lg:w-[194px] mt-[16px] mb-[16px]">
                     <ul class="block list-none">
-                        <li class="mb-3 font-[400] text-[16px] leading-[26px]">About Us</li>
-                        <li class="mb-3 font-[400] text-[16px] leading-[26px]">Contact Us</li>
-                        <li class="mb-3 font-[400] text-[16px] leading-[26px]">Blog</li>
-                        <li class="mb-3 font-[400] text-[16px] leading-[26px]">Events</li>
-                        <li class="font-[400] text-[16px] leading-[26px]">Media & Press</li>
+                        <li class="mb-3 font-[400] text-[16px] leading-[26px] hover:underline hover:pl-4 transition-all"><a href="#banner">About Us</a><i class="fa-brands fa-bitcoin text-[14px] ml-1 hover:underline "></i></li>
+                        <li class="mb-3 font-[400] text-[16px] leading-[26px] hover:underline hover:pl-4 transition-all"><a href="#">Contact Us</a><i class="fa-brands fa-bitcoin text-[14px] ml-1 hover:underline "></i></li>
+                        <li class="mb-3 font-[400] text-[16px] leading-[26px] hover:underline hover:pl-4 transition-all"><a href="#">Blog</a><i class="fa-brands fa-bitcoin text-[14px] ml-1 hover:underline "></i></li>
+                        <li class="mb-3 font-[400] text-[16px] leading-[26px] hover:underline hover:pl-4 transition-all"><a href="#">Events</a><i class="fa-brands fa-bitcoin text-[14px] ml-1 hover:underline "></i></li>
+                        <li class="font-[400] text-[16px] leading-[26px] hover:underline hover:pl-4 transition-all"><a href="#">Media & Press</a><i class="fa-brands fa-bitcoin text-[14px] ml-1 hover:underline "></i></li>
                     </ul>
                 </div>
                 <div>
                     <h5 class="font-[500] text-[20px] leading-[30px]">Account</h5>
-                    <!-- <hr class="hr_footer"> -->
-                    <hr class="border border-[#015533] w-[343px] lg:w-[194px] mt-[16px] mb-[16px]">
+                    <!-- <hr class="hr_footer"> <i class="fa-solid fa-link"></i>-->
+                    <hr class="border border-[#014228] w-[343px] lg:w-[194px] mt-[16px] mb-[16px]">
                     <ul class="block list-none">
-                        <li class="mb-3 font-[400] text-[16px] leading-[26px]">Privacy Policy</li>
-                        <li class="mb-3 font-[400] text-[16px] leading-[26px]">Terms & Conditions</li>
-                        <li class="mb-3 font-[400] text-[16px] leading-[26px]">FAQ</li>
-                        <li class="mb-3 font-[400] text-[16px] leading-[26px]">Events</li>
-                        <li class="font-[400] text-[16px] leading-[26px]">Media & Press</li>
+                        <li class="mb-3 font-[400] text-[16px] leading-[26px] hover:underline hover:pl-4 transition-all"><a href="#">Privacy Policy</a><i class="fa-solid fa-link text-[13px] ml-1 hover:underline "></i></li>
+                        <li class="mb-3 font-[400] text-[16px] leading-[26px] hover:underline hover:pl-4 transition-all"><a href="#">Terms & Conditions</a><i class="fa-solid fa-link text-[13px] ml-1 hover:underline "></i></li>
+                        <li class="mb-3 font-[400] text-[16px] leading-[26px] hover:underline hover:pl-4 transition-all"><a href="#faq">FAQ</a><i class="fa-solid fa-link text-[13px] ml-1 hover:underline "></i></li>
+                        <li class="mb-3 font-[400] text-[16px] leading-[26px] hover:underline hover:pl-4 transition-all"><a href="#">Events</a><i class="fa-solid fa-link text-[13px] ml-1 hover:underline "></i></li>
+                        <li class="font-[400] text-[16px] leading-[26px] hover:underline hover:pl-4 transition-all"><a href="#">Media & Press</a><i class="fa-solid fa-link text-[13px] ml-1 hover:underline "></i></li>
                     </ul>
                 </div>
-                <div class="lg:mt-4"> 
+                <div> 
                     <h5 class="font-[500] text-[20px] leading-[30px]">Social Media</h5>
-                    <hr class="border border-[#015533] w-[343px] lg:w-[194px] mt-[16px] mb-[16px]">
+                    <hr class="border border-[#014228] w-[343px] lg:w-[194px] mt-[16px] mb-[16px]">
                     <ul class="block list-none">
-                        <li class="mb-3 font-[400] text-[16px] leading-[26px]">Facebook</li>
-                        <li class="mb-3 font-[400] text-[16px] leading-[26px]">Twitter</li>
-                        <li class="mb-3 font-[400] text-[16px] leading-[26px]">Instagram</li>
-                        <li class="mb-3 font-[400] text-[16px] leading-[26px]">Threads</li>
-                        <li class="mb-3 font-[400] text-[16px] leading-[26px]">LinkedIn</li>
-                        <li class="font-[400] text-[16px] leading-[26px]">Youtube</li>
-                    </ul>
+                        <li class="mb-3 font-[400] text-[16px] leading-[26px] hover:underline hover:pl-4 transition-all"><a href="https://www.facebook.com/" target="_blank">Facebook</a><i class="fa-brands fa-facebook ml-1 hover:underline"></i></li>
+                        <li class="mb-3 font-[400] text-[16px] leading-[26px] hover:underline hover:pl-4 transition-all"><a href="https://x.com/" target="_blank">Twitter</a><i class="fa-brands fa-x-twitter ml-1 hover:underline "></i></li>
+                        <li class="mb-3 font-[400] text-[16px] leading-[26px] hover:underline hover:pl-4 transition-all"><a href="https://www.instagram.com/" target="_blank">Instagram</a><i class="fa-brands fa-instagram ml-1 hover:underline "></i></li>
+                        <li class="mb-3 font-[400] text-[16px] leading-[26px] hover:underline hover:pl-4 transition-all"><a href="https://www.threads.com/?hl=en" target="_blank">Threads</a><i class="fa-brands fa-threads ml-1 hover:underline "></i></li>
+                        <li class="mb-3 font-[400] text-[16px] leading-[26px] hover:underline hover:pl-4 transition-all"><a href="https://www.linkedin.com/" target="_blank">LinkedIn</a><i class="fa-brands fa-linkedin-in ml-1 hover:underline "></i></li>
+                        <li class="font-[400] text-[16px] leading-[26px] hover:underline hover:pl-4 transition-all"><a href="https://www.youtube.com/" target="_blank">Youtube</a><i class="fa-brands fa-youtube ml-1 hover:underline "></i></li>
                 </div>
             </div>
         </div>
