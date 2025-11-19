@@ -247,7 +247,6 @@ marquee{
 
 
 
-/* ! Spacing problem problem - 7 */
 /* mobilepp_section */
 .mobilepp_section {
     background-image: url("./../assets/banner.png");
@@ -392,5 +391,12 @@ footer ul>li{
   .auth_btn {
     width: 100%;
     margin-top: -20px;
+  }
+
+  /* mobilepp_section */
+  .mobilepp_section {
+      background-image: url("./../assets/banner.png");
+      background-repeat: no-repeat;
+      background-size: cover;
   }
 }
